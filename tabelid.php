@@ -1,5 +1,5 @@
 <?php
-require_once "../config.php";
+require_once "../../config.php";
 $conn = new mysqli($server_host, $server_user_name, $server_password, $database);
 $conn->set_charset("utf8");
 $stmt = $conn->prepare("SELECT comment, grade, added FROM film");
